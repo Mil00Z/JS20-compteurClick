@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur de Canettes</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+
+    <h1 class="title"></h1>
+
+    <section class="high bloc-limit">
+        <h2 class="med-title">Limite Haute</h2>
+        <input type="number" min="0" class="inputs limits" value="5">
+    </section>
+
+    <section class="counter-bloc">
+
+        <div class="counters">
+            <button id="up" class="btn upgrade">+</button>    
+            <input type="number" min="0" value="1" class="inputs">  
+        </div>
+
+        <div id="result" class="numbered">XX</div>
+
+        <div class="counters">
+            <button id="down" class="btn downgrade">-</button>
+            <input type="number" min="0" value="1" class="inputs">
+        </div>
+
+    </section>
+
+    <section class="low bloc-limit">
+        <h2 class="med-title">Limite Basse</h2>
+        <input type="number" min="0" class= "inputs limits" value="1">
+    </section>
+
+
+    <input type="reset" id="reset" class="btn btn-reset" value="ReeeeWind">
+
+
+    <section class="click-zone">
+
+        <h2 class="med-title">Zone de Clic</h2>
+
+        <span class="side-click left" data-click>Clic gauche : incrémentation</span>
+        <span class="side-click right" data-click>Clic droit : décrémentation</span>
+    </section>
+
+
+    <div id="alert" class="limit-alert"></div>
+    
+</body>
+    <script src="./main.js" async></script>
+</html>
